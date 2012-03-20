@@ -1,0 +1,46 @@
+#center
+  
+  #sign-upto
+    %span.subtitle
+      El poder de la sencillez y eficiencia en un click
+      %br
+    %span.textgray
+      Assign tasks, manage files, meet deadlines, share status updates, comment on just abount anything, real time chat
+      %br
+      %br
+      %br
+      %br
+      %a{ :href => new_user_registration_path}
+        = image_tag "btn-signup-today.jpg"
+      %br
+      %br
+    %span.textgray
+      Creating an account a free and takes 20 seconds
+  = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| 
+    .alert
+      = alert
+    
+    %table#tlogin
+      %tr
+        %td{ :width => "225", :class => "textgray"}
+          = f.label :email
+      %tr
+        %td
+          = f.email_field :email, :class => "inputext", :placeholder => 'email'
+        
+      %tr
+        %td.textgray
+          = f.label :password 
+      %tr
+        %td
+          = f.password_field :password, :class => "inputext", :placeholder => 'password'
+          
+      %tr
+        %td.textgray
+          %br
+          = image_submit_tag "btn-login.jpg"
+          #forgotps
+            forgot your password?
+            %br
+            %br
+            %br

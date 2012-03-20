@@ -1,0 +1,6 @@
+es-MX:
+  layout:
+    login: 'Ingresar'
+    logout: 'Salir'
+    footer: 'Vulcanik 2012 Todos los derechos reservados |'
+    policy: 'Políticas de Privacidad'

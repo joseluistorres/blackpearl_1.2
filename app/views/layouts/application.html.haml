@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title
+      The BlackPearl
+  = stylesheet_link_tag    "application", :media => "all"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+
+  %body
+    
+    #head
+      %ul#menu-horizontal
+        %li{:style => "color:#FFFFFF;"}
+          = image_tag "flecha.png"
+          - if user_signed_in?
+            = link_to t('layout.logout'), destroy_user_session_path, :method => :delete
+          - else
+            = link_to t('layout.login'), new_user_session_path
+            
+    #page
+      #banner
+        = image_tag  "logo.png", :alt => "logo", :id => "logo"
+      
+      #contenedor-login
+        = yield
+      #footer
+        %p
+          = t('layout.footer') 
+          = t('layout.policy')
