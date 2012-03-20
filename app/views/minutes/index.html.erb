@@ -1,0 +1,9 @@
+<div id="minutes"></div>
+
+<script type="text/javascript">
+  $(function() {
+    // Blog is the app name
+    window.router = new CptCompass.Routers.MinutesRouter({minutes: <%= @minutes.to_json.html_safe -%>});
+    Backbone.history.start();
+  });
+</script>
