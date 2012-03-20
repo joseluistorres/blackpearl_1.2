@@ -7,7 +7,7 @@ development:
   database: cpt_compass_dev
   pool: 5
   username: root
-  password: rebecca
+  password: p4ssw0rd
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -20,7 +20,7 @@ test: &test
     database: cpt_compass_dev
     pool: 5
     username: root
-    password: rebecca
+    password: p4ssw0rd
     socket: /tmp/mysql.sock
 
 production:
@@ -30,7 +30,7 @@ production:
     database: cpt_compass_dev
     pool: 5
     username: root
-    password: rebecca
+    password: p4ssw0rd
     socket: /var/lib/mysql/mysql.sock
 
 cucumber:
