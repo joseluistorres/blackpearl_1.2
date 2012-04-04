@@ -1,3 +1,82 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+a{
+	color: #0DA6EA;
+	text-decoration: none;
+}
+
+.inputext{
+	height:37px;
+	font-size:18px;
+	width:258px;
+	padding: 5px;
+	border: solid 1px #CCCCCC;
+}
+
+.subtitle{
+	font-family: sans-serif, Arial, Helvetica;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.styled-select select {
+   background: transparent;
+   
+   padding: 5px;
+   font-size: 16px;
+   height: 37px;
+}
+
+.styled-select {
+   width: 282px;
+   height: 34px;
+   overflow: hidden;
+   background: url(new_arrow.jpg) no-repeat scroll right;
+   border: solid 1px #CCCCCC;
+}
+
+.select{
+	width: 320px;
+	background: none repeat scroll 0% 0% transparent;
+	border: none;
+}
+
+.textgray{
+	color:#666666;
+	font-family: sans-serif, Arial, Helvetica;
+	font-size:11px;
+}
+
+#center-p{
+	background:#FFFFFF;
+	border: solid 1px #CCCCCC;
+	float:left;
+	position:relative;
+	padding: 29px 5px 24px 40px;
+	width: 609px;
+}
+
+#contenedor-reg{
+	margin-left: 55px;
+	background-color:#EFEFEF;
+	float:left;
+	padding: 24px 16px 20px 16px;
+	position:relative;
+}
+
+#terms{
+	margin-left:90px;
+}
+
+#tregistrer{
+	width:397px;
+}
+
+#sign-upto{
+	float:left;
+	height:162px;
+	text-align:justify;
+	margin-right:120px;
+	width:348px;
+}
